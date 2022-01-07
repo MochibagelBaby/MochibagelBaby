@@ -566,6 +566,7 @@ hr {
    transition: all .1s ease;
    cursor: pointer;
    padding: 0.125em 0.25em;
+   padding: 0.125em 0.25em 0.2em;
 }
 
 .content-table a:hover {
@@ -1224,6 +1225,7 @@ hr {
    transition: all .1s ease;
    cursor: pointer;
    padding: .125em .25em;
+   padding: 0.125em 0.25em 0.2em;
 }
 .global-navlinks a:hover {
    text-decoration: none;
