@@ -1,0 +1,40 @@
+.bootstrap-logo {
+   width: 40px;
+   height: fit-content;
+   margin-right: .425em;
+}
+
+.navbar-nav .nav-link {
+   font-size: .9375em;
+}
+.navbar.color {
+   padding-top: 0.25rem;
+   padding-bottom: 0.25rem;
+}
+.navbar.color .navbar-brand {
+   font-size: 1em;
+}
+.navbar.color .navbar-toggler {
+   padding: 0.25rem 0.5rem;
+}
+.navbar.color .navbar-toggler-icon {
+   width: 1.25em;
+   height: 1.25em;
+}
+.navbar.color .navbar-nav {
+   font-size: .9375em;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------- */
+/* .cs-b_header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+} */
