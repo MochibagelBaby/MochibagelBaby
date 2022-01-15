@@ -153,7 +153,17 @@
         padding: 3.5rem 0;
     }
 
+    .press {
+        margin-top: 2rem;
+    }
+    .press-logo img {
+        padding: 0.75rem 2rem 0;
+    }
+
     .pricing-plans {
+        margin-top: 2rem;
+    }
+    .pricing-plan-col:last-child {
         margin-top: 2rem;
     }
 }
@@ -335,6 +345,7 @@
 
     .pricing-plan-col:last-child {
         margin-bottom: 0;
+        margin-top: 0;
     }
 
     .plan-btn {

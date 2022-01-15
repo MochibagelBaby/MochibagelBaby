@@ -1518,6 +1518,14 @@ li.global-navlink-disabled {
 }
 
 
+
+
+.coding-challenge .post p.post-author {
+   margin-top: 2em;
+   /* margin-top: 1.875em; */
+}
+
+
 /* CODING CHALLENGE */
 .content-container.coding-challenge {
    max-width: 1200px;
