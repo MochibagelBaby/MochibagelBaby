@@ -8,13 +8,14 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/code_snippets/tindog.css">
+    <link rel="stylesheet" href="../assets/css/code_snippets/tindog_media_queries.css">
     <script src="https://kit.fontawesome.com/c118028898.js" crossorigin="anonymous"></script>
 
     <title>Tindog</title>
   </head>
   <body>
-    <!-- ********** navigation ********** -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- ********** nav { desktop } ********** -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top tindog-navbar nav-desktop">
       <div class="container">
         <a id="navbar-brand" class="navbar-brand" href="#">tindog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup2-7" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,11 +23,45 @@
         </button>
         <div class="nav-menu">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup2-7">
-            <div class="navbar-nav">
-                <a class="nav-link nl1 active" aria-current="page" href="#">Contact</a>
-                <a class="nav-link nl2" href="#">Pricing</a>
-                <a class="nav-link nl3" href="#">Download</a>
+            <div class="navbar-nav tindog-navbar-nav">
+                <a class="nav-link tindog-navlink" aria-current="page" href="#features">Features</a>
+                <a class="nav-link tindog-navlink" href="#pricing">Pricing</a>
+                <a class="nav-link tindog-navlink nav-btn-download" id="navBtnDownload" href="#download">Download</a>
             </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ********** nav { tablet } ********** -->
+    <nav id="navbar-tablet" class="navbar navbar-expand-lg navbar-dark fixed-top tindog-navbar nav-tablet">
+      <div class="container">
+        <a id="navbar-brand-tablet" class="navbar-brand" href="#">tindog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup2-7" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup2-7">
+            <div class="navbar-nav tindog-navbar-nav">
+                <a class="nav-link tindog-navlink" aria-current="page" href="#features">Features</a>
+                <a class="nav-link tindog-navlink" href="#pricing">Pricing</a>
+                <a class="nav-link tindog-navlink nav-btn-download" id="navBtnDownload" href="#download">Download</a>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ********** nav { mobile } ********** -->
+    <nav id="navbar-mobile" class="navbar navbar-expand-lg navbar-dark fixed-top tindog-navbar nav-mobile">
+      <div class="container">
+        <a id="navbar-brand-mobile" class="navbar-brand" href="#">tindog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup2-7" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup2-7">
+            <div class="navbar-nav tindog-navbar-nav">
+                <a class="nav-link tindog-navlink" aria-current="page" href="#features">Features</a>
+                <a class="nav-link tindog-navlink" href="#pricing">Pricing</a>
+                <a class="nav-link tindog-navlink nav-btn-download" id="navBtnDownload" href="#download">Download</a>
             </div>
         </div>
       </div>
@@ -36,14 +71,14 @@
     <section class="landing-section colored-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-sm-8 col-lg-6">
                     <h1 class="landing-title">Meet new and interesting dogs nearby</h1>
                     <div class="section-download-btns">
                         <button class="btn btn-lg btn-dark apple-download-btn"><i class="fab fa-apple"></i>Download</button>
                         <button class="btn btn-lg btn-outline-light android-download-btn"><i class="fab fa-google-play"></i>Download</button>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-sm-4 col-lg-6">
                     <img src="../assets/img/tindog/iphone6.png" alt="Tindog iphone image" class="landing-img">
                 </div>
             </div>
@@ -51,20 +86,20 @@
     </section>
 
     <!-- ********** 2) features section ********** -->
-    <section class="features-section">
+    <section id="features" class="features-section">
         <div class="container">
             <div class="row feature-group">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 feature">
                     <i class="fas fa-check-circle"></i>
                     <h3>Easy to use</h3>
                     <p>So easy to use, even your dog could do it</p>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 feature">
                     <i class="fas fa-bullseye"></i>
                     <h3>Elite Clientele</h3>
                     <p>We have all the dogs, the greatest dogs</p>
                 </div>
-                <div class="col-md-12 col-lg-4">
+                <div class="col-md-12 col-lg-4 feature">
                     <i class="fas fa-heart"></i>
                     <h3>Guaranteed to work</h3>
                     <p>Find the love of your dog's life or your money back</p>
@@ -106,17 +141,25 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div class="press">
-                <img src="../assets/img/tindog/TechCrunch.png" alt="TechCrunch">
-                <img src="../assets/img/tindog/tnw.png" alt="TNW">
-                <img src="../assets/img/tindog/bizinsider.png" alt="Business Insider">
-                <img src="../assets/img/tindog/mashable.png" alt="Mashable">
+            <div class="row press">
+                <div class="col-6 col-lg-3 press-logo">
+                    <img src="../assets/img/tindog/TechCrunch.png" alt="TechCrunch">
+                </div>
+                <div class="col-6 col-lg-3 press-logo">
+                    <img src="../assets/img/tindog/tnw.png" alt="TNW">
+                </div>
+                <div class="col-6 col-lg-3 press-logo">
+                    <img src="../assets/img/tindog/bizinsider.png" alt="Business Insider">
+                </div>
+                <div class="col-6 col-lg-3 press-logo">
+                    <img src="../assets/img/tindog/mashable.png" alt="Mashable">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ********** 4) pricing section ********** -->
-    <section class="pricing-section">
+    <section id="pricing" class="pricing-section">
         <div class="container">
             <h2 class="pricing-title">A Plan for Every Dog's Needs</h2>
             <p class="pricing-desc">Simple and affordable price plans for your and your dog</p>
@@ -183,7 +226,7 @@
     </section>
 
     <!-- ********** 5) download section ********** -->
-    <section class="download-section colored-section">
+    <section id="download" class="download-section colored-section">
         <div class="container">
             <h2>Find the True Love of Your Dog's Life Today</h2>
             <div class="section-download-btns">
@@ -214,33 +257,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script>
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-        document.getElementById("navbar").style.padding = "0";
-        // document.getElementById("navbar").style.backgroundColor = "#d9364f";
-        document.getElementById("navbar").style.backgroundColor = "rgb(195 45 67 / 95%)";
-        // document.getElementById("navbar").style.backgroundColor = "rgb(203 56 76 / 95%)";
-        document.getElementById("navbar").style.backdropFilter = "blur(20px)";
-        document.getElementById("navbar").style.boxShadow = "rgb(0 0 0 / 20%) 0px 2px 8px";
-        // document.getElementById("navbar").style.borderBottom = "1px solid rgb(189 42 64 / 50%)";
-        document.getElementById("navbar-brand").style.fontSize = "1.875rem";
-        document.getElementsByClassName("nl1 nl2 nl3")[0].style.fontSize = "1rem";
-    } else {
-        document.getElementById("navbar").style.padding = "2rem 0 0";
-        document.getElementById("navbar").style.backgroundColor = "transparent";
-        document.getElementById("navbar").style.backdropFilter = "blur(0)";
-        document.getElementById("navbar").style.boxShadow = "none";
-        // document.getElementById("navbar").style.borderBottom = "1px solid rgb(189 42 64 / 0)";
-        document.getElementById("navbar-brand").style.fontSize = "2.125rem";
-    }
-    }
-    </script>
-
+    <script src="../javascripts/tindog.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
